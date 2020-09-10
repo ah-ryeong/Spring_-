@@ -1,0 +1,43 @@
+1594945921462	Rename resource 'application.properties'
+1594946431359	Delete element
+1594946443754	Rename resource 'user.html'
+1594948563485	Rename package 'com.winter.config'
+1594948617985	Rename package 'com.winter.blog.config'
+1594948647868	Delete element
+1594948919019	Rename package 'com.winter'
+1594948941239	Copy package
+1594948944268	Copy package
+1594948954529	Delete element
+1594948997946	Delete element
+1594949001005	Rename resource 'member.xml'
+1594949102832	Delete element
+1594949118721	Rename package 'com.winter'
+1594949127329	Rename package 'com.winter.config'
+1594949155258	Move compilation unit
+1594949241512	Delete element
+1594949272077	Copy package
+1594949274852	Copy package
+1594949280725	Delete element
+1594949284815	Delete element
+1594949306456	Rename package 'com.winter.blog'
+1594949335180	Move compilation unit
+1594949339156	Delete element
+1594949639375	Delete element
+1594949642106	Delete element
+1594949647322	Delete element
+1594949669150	Rename package 'com.winter'
+1594949698151	Rename package 'com.winter.blog'
+1594949708883	Rename package 'com.winter'
+1594949713265	Delete element
+1594949797402	Move compilation unit
+1594950017959	Delete element
+1594956998629	Copy compilation unit
+1594957174962	Copy file
+1594962766434	Rename type 'AccountRequestDto'
+1594962846401	Copy compilation unit
+1594962888662	Rename type 'WthDraRequestDto'
+1594963051854	Rename type 'WthDrawRequestDto'
+1594965244852	Move compilation unit
+1594965248957	Delete element
+1594965266085	Copy compilation unit
+1594965277057	Delete element

@@ -1,0 +1,54 @@
+1597653140719	Move compilation unit
+1597653190801	Rename compilation unit 'CustomerUserDetailsService.java'
+1597717957056	Delete elements
+1597717962070	Delete elements
+1597717971361	Delete element
+1597717977916	Delete element
+1597718160087	Rename type 'Role'
+1597746706099	Rename type 'NowCrawling'
+1597747005338	Copy compilation unit
+1597747010451	Rename type 'NowNicknameCrawling2'
+1597750114710	Rename type 'NowIdCrawling'
+1597751273146	Delete element
+1597807180962	Delete elements
+1597828396536	Delete element
+1597829243728	Move compilation unit
+1597830441158	Delete element
+1597830450306	Delete element
+1597831455686	Delete element
+1597899314313	Delete element
+1597899470566	Rename type 'KeywordRepository'
+1597903071390	Rename package 'com.project.brunch.model'
+1597903090161	Move compilation unit
+1597903095064	Rename package 'com.project.brunch.domain.Comment'
+1597903123689	Move compilation unit
+1597903189431	Delete element
+1597903195095	Move compilation unit
+1597903206726	Move compilation unit
+1597903262278	Move compilation units
+1597903268070	Move compilation unit
+1597903271083	Move compilation unit
+1597903275856	Move compilation unit
+1597903334948	Move compilation unit
+1597903340547	Move compilation unit
+1597903347510	Move compilation unit
+1597903352151	Delete element
+1597904454973	Rename resource 'mapper'
+1597904518507	Delete element
+1597905864140	Rename type 'Like'
+1597905886729	Rename type 'LikeRepository'
+1597907689636	Rename package 'com.project.brunch.config.auth.user'
+1597907707815	Move compilation units
+1597907716373	Delete element
+1597907729592	Delete element
+1597907733457	Delete element
+1597909562868	Delete element
+1597912562932	Move compilation unit
+1597912581348	Move compilation units
+1597912588808	Move compilation unit
+1597916581707	Rename type 'IndexController'
+1597919460701	Delete elements
+1597919466609	Delete element
+1597993719715	Delete elements
+1597994421595	Rename type 'RestApiController'
+1597994446778	Rename type 'CrawlingController'

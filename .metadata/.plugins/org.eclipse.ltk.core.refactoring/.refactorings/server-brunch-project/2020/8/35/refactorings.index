@@ -1,0 +1,56 @@
+1598252107941	Rename resource 'DashBoard.html'
+1598252151460	Rename resource 'DashBoard.mustache'
+1598252157163	Rename resource 'DashBoard.html'
+1598252408403	Rename resource 'User.html'
+1598252435616	Rename resource 'Post.html'
+1598252570882	Copy file
+1598252575377	Copy file
+1598252816533	Rename resource '_footer.html'
+1598252833442	Copy file
+1598252840874	Copy file
+1598252860262	Delete elements
+1598252876253	Rename resource '_navbar.html'
+1598252924616	Rename resource '_sidebar.html'
+1598253511179	Rename resource 'DashBoard.mustache'
+1598253515569	Rename resource 'Post.mustache'
+1598253522737	Rename resource 'User.mustache'
+1598253526751	Rename resource 'dashboard.mustache'
+1598253539308	Rename resource 'admin.mustache'
+1598253953438	Move folder
+1598254250954	Move folders
+1598254261910	Move files
+1598254266367	Delete element
+1598255280680	Rename resource 'dashboard.mustache'
+1598255296597	Rename resource 'dashboard.html'
+1598255314562	Delete element
+1598257437703	Move folder
+1598257504976	Move folder
+1598257509506	Move folders
+1598257521913	Move folders
+1598261688195	Rename resource 'main.html'
+1598261758848	Copy file
+1598261801306	Delete element
+1598261814428	Rename resource 'comment.html'
+1598339991081	Rename type 'UserAction'
+1598340081808	Rename type 'Action'
+1598340090873	Delete element
+1598341363542	Delete element
+1598345210720	Delete element
+1598345251230	Delete element
+1598345258097	Rename package 'com.project.brunch.DTO'
+1598349668644	Move compilation unit
+1598349672424	Move compilation unit
+1598349676554	Delete element
+1598426349663	Copy compilation unit
+1598426361180	Rename type 'PostMapper'
+1598426801465	Delete element
+1598431726481	Delete element
+1598500441001	Copy file
+1598596028004	Rename type 'GoogleMailSendTest'
+1598596062124	Move compilation unit
+1598671267646	Rename type 'MainPostDto'
+1598673592878	Delete element
+1598674023207	Delete element
+1598674056265	Rename type 'PostServicew'
+1598674783047	Delete element
+1598679068253	Rename type 'UserService'

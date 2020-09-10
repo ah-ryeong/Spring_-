@@ -1,0 +1,53 @@
+{{>layout/header}}
+
+<div class="container">
+  <br /><br/>
+  <h2>OutPlayer 등록하기</h2>
+  <hr/>
+  <form action="/baseball/playerSave" method="post">
+	<div class="form-group">
+		<label for="team">teamName:</label>
+		<input type="text" class="form-control" placeholder="팀이름을 입력하세요." name="teamName">
+	</div>
+	<div class="form-group">
+		<label for="number">PlayerNo:</label>
+		<input type="number" class="form-control" placeholder="선수번호를 입력하세요." name="playerNo">
+	</div>
+	<div class="form-group">
+		<label for="name">Name:</label>
+		 <input type="text" class="form-control" placeholder="선수 이름을 입력하세요." name="name">
+	</div>
+	<div class="form-group">
+		<label for="position">Position:</label>
+		<input type="text" class="form-control" placeholder="선수의 포지션을 입력하세요." name="position">
+	</div>
+		<button id="playerSave" type="submit" class="btn btn-outline-dark">Submit</button>
+	</form>
+		
+  <br/><br/>
+  <h2>OutPlayer List</h2>
+  <hr/>
+  <br/>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>no</th>
+        <th>경기장</th>
+        <th>삭제하기</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#stardiumList}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{place}}</td>
+        <td><button id="delete_{{id}}" type="submit" class="btn btn-outline-dark mb-2">삭제하기</button></td>
+      </tr>
+      {{/stardiumList}}
+    </tbody>
+  </table>
+</div>
+
+<script src="/js/stardium.js"></script>
+</body>
+</html>

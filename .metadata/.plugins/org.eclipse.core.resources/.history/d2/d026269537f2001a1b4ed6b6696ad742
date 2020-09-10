@@ -1,0 +1,5 @@
+package com.winter.baseballproject.domain.stardium;
+
+public class Stardium {
+
+}

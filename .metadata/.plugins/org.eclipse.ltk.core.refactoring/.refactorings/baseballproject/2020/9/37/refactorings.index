@@ -1,0 +1,46 @@
+1599612981408	Rename package 'com.winter.baseballproject.modet'
+1599612998102	Rename package 'com.winter.baseballproject.model'
+1599613025419	Move compilation unit
+1599613419934	Rename resource 'application.properties'
+1599613776804	Rename resource 'stardium.html'
+1599613846535	Rename package 'com.winter.baseballproject.controller'
+1599613979985	Rename resource 'stardium.mustache'
+1599614226758	Rename type 'Out'
+1599614255665	Rename package 'com.winter.baseballproject.domain.out'
+1599614981040	Move file
+1599614987656	Rename resource 'baseball.mustache'
+1599615119044	Rename resource 'footer.mustache'
+1599615450773	Move file
+1599615453858	Delete element
+1599615555527	Move file
+1599615557482	Delete element
+1599615560264	Delete element
+1599615564448	Rename resource 'header.mustache'
+1599615597965	Delete element
+1599615725984	Copy file
+1599615732018	Copy file
+1599615766688	Copy file
+1599615774980	Copy file
+1599615779894	Copy file
+1599616992698	Rename resource 'main.html'
+1599617074942	Delete elements
+1599617083373	Rename resource 'playerlist.mustache'
+1599617222068	Rename type 'StardiumController'
+1599617412736	Move file
+1599617471483	Rename resource 'header.html'
+1599621267847	Delete element
+1599623609702	Delete element
+1599628087531	Delete element
+1599634062081	Copy file
+1599634070015	Delete element
+1599634079034	Copy file
+1599705359393	Rename resource 'admin.xml'
+1599708246730	Copy file
+1599708252553	Rename resource 'playter.js'
+1599713453188	Delete element
+1599713454960	Copy file
+1599713475082	Delete element
+1599713482560	Copy file
+1599713737201	Copy file
+1599714086976	Delete element
+1599714919402	Copy file

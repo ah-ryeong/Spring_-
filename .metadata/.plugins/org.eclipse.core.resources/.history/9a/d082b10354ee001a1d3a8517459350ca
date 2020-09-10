@@ -1,0 +1,9 @@
+package com.project.brunch.domain.comment;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.project.brunch.domain.post.Post;
+
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
+
+}

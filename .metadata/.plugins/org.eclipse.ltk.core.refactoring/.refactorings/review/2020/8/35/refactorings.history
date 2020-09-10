@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;review/src/main/resources/templates/craw_naver.html&apos; to &apos;craw_naver.mustache&apos;" description="Rename resource &apos;craw_naver.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/craw_naver.html" name="craw_naver.mustache" stamp="1598578821067" updateReferences="true"/>
+</session>

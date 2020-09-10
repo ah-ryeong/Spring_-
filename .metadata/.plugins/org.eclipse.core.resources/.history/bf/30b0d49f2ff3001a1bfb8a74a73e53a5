@@ -1,0 +1,14 @@
+package com.winter.baseballproject.service;
+
+import org.springframework.stereotype.Service;
+
+import com.winter.baseballproject.domain.player.PlayerMapper;
+import com.winter.baseballproject.domain.player.PlayerRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class OutPlayerService {
+
+}

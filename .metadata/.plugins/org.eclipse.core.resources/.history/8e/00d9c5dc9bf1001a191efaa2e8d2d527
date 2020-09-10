@@ -1,0 +1,5 @@
+package com.winter.review.config.batch;
+
+public class BatchCrawNaver {
+
+}

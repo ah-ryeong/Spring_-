@@ -1,0 +1,5 @@
+package com.winter.baseballproject.web.dto.team;
+
+public class TeamReqDto {
+
+}

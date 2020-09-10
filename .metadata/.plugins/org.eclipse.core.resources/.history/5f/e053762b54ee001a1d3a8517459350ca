@@ -1,0 +1,14 @@
+package com.project.brunch.service;
+
+import org.springframework.stereotype.Service;
+
+import com.project.brunch.domain.comment.CommentRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class CommentService {
+
+	private final CommentRepository commentRepository;
+}

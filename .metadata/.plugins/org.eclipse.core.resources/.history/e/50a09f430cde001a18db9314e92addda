@@ -1,0 +1,69 @@
+package crawnewsapp;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+// 1번 Jsoup (Maven)
+// 2번 Jsoup로 URL 요청
+// 3번 oid의 번호는 어디까지 있는지
+// 4번 oid 마다의 신문사명을 매칭
+public class OidParse {
+
+	Map<String, String> oidMap = new HashMap<>();
+	static final int MAXERRORCOUNT = 100;
+
+	public static void main(String[] args) {
+		
+		OidParse oidParse = new OidParse();
+		int count = 0;
+		
+		// 1. 수집대상 URL
+		String host = "https://news.naver.com/main/read.nhn?sid1=001";
+		String url;
+		String oid = "001";
+		String aid = "0000000001";
+		
+		while (true) {
+			url = host + "&oid=" + oid + "&aid=" +aid;
+			Document doc = null; // Document에는 페이지의 전체 소스가 저장됨
+			
+			try {
+				doc = Jsoup.connect(url).get();
+				
+				// select를 이용해서 원하는 태그를 선택, select는 원하는 값을 가져오기 위해 중요한 기능임
+				Elements title = doc.select("#articleTitle");
+				String newsTitle = title.text();
+				Elements press = doc.select(".article_header a img");
+				String pressName = press.attr("title");
+				
+				if (!title.equals("")) {
+					oidParse.oidMap.put(oid, pressName);
+				}
+				
+				// aid 증가 시키면서 찾아보기 해야함
+				System.out.println("==============================");
+				System.out.println("oid : " + oid);
+				System.out.println("title : " + title);
+				System.out.println("press : " + press);
+				System.out.println("newsTitle : " + newsTitle);
+				System.out.println("pressName : " + pressName);
+				System.out.println("url : " + url);
+				System.out.println();
+			} catch (Exception e) {
+				count ++; // 만약에 해당 번호에 값이 없어도 다음꺼 찾게 넘어가야하니까 ++ 시켜줌 
+				System.out.println("못 찾아서 넘어갑니다.");
+			}
+			
+			oid = MyUtil.increaseOid(oid);
+			if (MAXERRORCOUNT == count) break;
+		}
+		
+		
+
+	}
+}

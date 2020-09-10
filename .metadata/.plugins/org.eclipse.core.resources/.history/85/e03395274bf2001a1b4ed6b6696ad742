@@ -1,0 +1,7 @@
+package com.winter.baseballproject.service;
+
+@RequiredArgsConstructor
+@Service
+public class StardiumService {
+
+}

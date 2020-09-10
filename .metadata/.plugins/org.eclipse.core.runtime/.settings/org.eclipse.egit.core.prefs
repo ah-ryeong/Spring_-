@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=C\:\\src\\springwork\\blog\\.git;C\:\\src\\springwork\\brunch\\.git;C\:\\src\\springwork\\securityex01\\.git;C\:\\src\\springwork\\server-brunch-project\\.git;C\:\\src\\springwork\\googleapp\\.git;C\:\\src\\springwork\\validex01\\.git;C\:\\src\\springwork\\jwtex01\\.git;C\:\\src\\springwork\\instagram\\.git;C\:\\src\\springwork\\viewresolver\\.git;C\:\\Users\\admin\\Desktop\\mergetest\\brunch-merge-test\\.git;C\:\\src\\springwork\\brunch-project\\.git;
+GitRepositoriesView.GitDirectories.relative=blog\\.git;brunch\\.git;securityex01\\.git;server-brunch-project\\.git;googleapp\\.git;validex01\\.git;jwtex01\\.git;instagram\\.git;viewresolver\\.git;C\:\\Users\\admin\\Desktop\\mergetest\\brunch-merge-test\\.git;brunch-project\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

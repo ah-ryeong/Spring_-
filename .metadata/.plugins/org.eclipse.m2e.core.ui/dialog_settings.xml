@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\admin\Desktop\mergetest\brunch-merge-test"/>
+			<item value="C:\src\springwork\NaverReviewApp"/>
+			<item value="C:\src\springwork\server-brunch-project"/>
+			<item value="C:\src\springwork\instagram"/>
+			<item value="C:\src\springwork\brunch-project"/>
+			<item value="C:\src\springwork\Spring_JWTwithReact"/>
+			<item value="C:\src\springwork\JWT-React-OAuth2.0-Eazy"/>
+			<item value="C:\src\springwork\brunch\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

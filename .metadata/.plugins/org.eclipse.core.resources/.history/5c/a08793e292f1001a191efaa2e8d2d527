@@ -1,0 +1,5 @@
+package com.winter.review.model;
+
+public class SearchKeyword {
+
+}

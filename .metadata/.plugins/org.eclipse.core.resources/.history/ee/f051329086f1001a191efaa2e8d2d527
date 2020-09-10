@@ -1,0 +1,26 @@
+package com.winter.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.winter.repository.ProductRepository;
+
+@Controller
+public class CrawNaverController {
+	
+	@Autowired
+	private ProductRepository productRepository;
+	
+	@GetMapping("/craw/naver")
+	public String crawNaver() {
+		return "craw_naver";
+	}
+	
+	@PostMapping
+	public @ResponseBody String crawNaverProc(String keyword) {
+		return "성공";
+	}
+}

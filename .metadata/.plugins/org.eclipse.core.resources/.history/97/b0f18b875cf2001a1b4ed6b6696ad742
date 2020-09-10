@@ -1,0 +1,13 @@
+package com.winter.baseballproject.service;
+
+import org.springframework.stereotype.Service;
+
+import com.winter.baseballproject.domain.stardium.StardiumRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class TeamService {
+
+}

@@ -1,0 +1,14 @@
+package com.winter.baseballproject.service;
+
+import org.springframework.stereotype.Service;
+
+import com.winter.baseballproject.domain.team.TeamRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class TeamService {
+
+	private final TeamRepository teamRepository;
+}

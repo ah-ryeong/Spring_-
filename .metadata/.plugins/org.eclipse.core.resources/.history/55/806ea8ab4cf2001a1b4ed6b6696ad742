@@ -1,0 +1,17 @@
+package com.winter.baseballproject.web.dto.stardium;
+
+import com.winter.baseballproject.domain.stardium.Stardium;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class StardiumReqDto {
+
+	private String place;
+}

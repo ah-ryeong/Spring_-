@@ -1,0 +1,17 @@
+package com.winter.baseballproject.web.dto.outplayer;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class OutPlayterReqDto {
+	
+	private int playerId;
+	private String reason;
+	private String createDate;
+}

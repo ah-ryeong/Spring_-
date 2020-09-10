@@ -1,0 +1,27 @@
+package com.project.brunch.service.admin;
+
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.project.brunch.domain.post.Post;
+import com.project.brunch.web.dto.admin.CommentDto;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class AdminCommentService {
+
+	@Transactional
+	public List<CommentDto> getCommentList() {
+		Page<Post> page = postRepository
+				.findAll(PageRequest.of(pageNum - 1, PAGE_POST_COUNT, Sort.by(Sort.Direction.DESC, "id")));
+		List<Post> postEntity = page.getContent();
+		return null;
+	}
+}

@@ -1,0 +1,24 @@
+package com.winter.baseballproject.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.winter.baseballproject.domain.stardium.StardiumRepository;
+import com.winter.baseballproject.web.dto.stardium.StardiumReqDto;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class StardiumService {
+	
+	private final StardiumRepository stardiumRepository;
+
+	@Transactional
+	public void Stardium저장(StardiumReqDto stardiumReqDto) {
+		System.out.println("StardiumService 입력 들어옴");
+		System.out.println("StardiumService : Stardium저장 :::"+stardiumReqDto);
+		
+		stardiumRepository.save(stardiumReqDto.getPlace());
+	}
+}

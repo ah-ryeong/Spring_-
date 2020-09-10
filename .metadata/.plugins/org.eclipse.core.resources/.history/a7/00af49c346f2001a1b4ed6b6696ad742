@@ -1,0 +1,86 @@
+let index = {
+   init: function(){ // 이벤트 리스너 바인딩
+      //야구장저장
+      $("#btn-stardium").on("click", () => { // ()안에 아무 변수가 들어가도 콜백시 그 자리에 오브젝트가 들어감
+         this.stardium();
+      }),
+      // 팀 저장
+      $("#btn-team").on("click", () => { // ()안에 아무 변수가 들어가도 콜백시 그 자리에 오브젝트가 들어감
+         this.team();
+      }),
+      // 선수 저장
+      $("#btn-player").on("click", () => { // ()안에 아무 변수가 들어가도 콜백시 그 자리에 오브젝트가 들어감
+         this.player();
+      }),
+      
+      // 야구장 저장 로직 실행
+      stardium: function(){ 
+      let data = {
+         title:$("#title").val(),
+         content:$("#content").val(),
+         userId:$("#userId").val()
+      };
+      $.ajax({
+         type:"POST",
+         url:"/post", // post만 넣기
+         data:JSON.stringify(data), // POST 방식이기 때문에 data를 날릴 수 있음
+         contentType:"application/json; charset=utf-8", // 대소문자 구분
+         dataType: "json"// 서버로부터 응답받을 때 데이터 타입
+      }).done((resp)=>{ 
+         alert("글쓰기 성공");
+         location.href="/";
+         console.log(resp); // 자바스크립트 오브젝트가 되서 날라옴
+      }).fail((error)=>{ // 실패시 ajax 통신이 안된 것
+         alert("글쓰기 실패");
+         console.log(error);   
+      })
+   }, //end of stardium
+   
+   team: function(){ 
+      let data = {
+         id:$("#id").val()
+      };
+      $.ajax({
+         type:"DELETE",
+         url:"/post/"+data.id, // post만 넣기
+         dataType: "json"// 서버로부터 응답받을 때 데이터 타입
+      }).done((resp)=>{ 
+    	 if(resp.statusCode === 1){ // statusCode는 int값
+    		 alert("삭제성공");
+    		 location.href="/";
+    	 }else{
+    		 alert("권한없음:삭제실패");
+    	 }
+         console.log(resp); // 자바스크립트 오브젝트가 되서 날라옴
+      }).fail((error)=>{ // 실패시 ajax 통신이 안된 것
+         console.log(error);   
+      });
+   },//end of team
+      
+   player: function(){ 
+      let data = {
+         id:$("#id").val(),
+         title:$("#title").val(),
+         content:$("#content").val()
+      };
+      
+      $.ajax({
+         type:"PUT",
+         url:"/post/"+data.id, // post만 넣기
+         data:JSON.stringify(data),
+         contentType:"application/json; charset=utf-8",
+         dataType: "json"// 서버로부터 응답받을 때 데이터 타입
+      }).done((resp)=>{ 
+         alert("수정성공");
+         location.href="/post/"+data.id;
+         console.log(resp); // 자바스크립트 오브젝트가 되서 날라옴
+      }).fail((error)=>{ // 실패시 ajax 통신이 안된 것
+         alert("수정실패");
+         console.log(error);   
+      }); // end of player
+   
+   }
+
+}
+
+index.init();

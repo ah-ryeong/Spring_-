@@ -1,0 +1,25 @@
+package com.winter.baseballproject.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.winter.baseballproject.domain.outplayer.OutPlayer;
+import com.winter.baseballproject.domain.outplayer.OutPlayerRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class OutPlayerService {
+
+	private OutPlayerRepository outPlayerRepository;
+	
+	@Transactional
+	public void 저장(int id, String reason) {
+		
+		OutPlayer outPlayerSave = OutPlayer.builder()
+				.playerId(id)
+				.reason(reason)
+				.build();
+	}
+}

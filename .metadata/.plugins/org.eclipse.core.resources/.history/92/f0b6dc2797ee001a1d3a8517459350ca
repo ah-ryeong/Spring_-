@@ -1,0 +1,9 @@
+package com.project.brunch.domain.comment;
+
+import java.util.List;
+
+public interface CommentMapper {
+
+	// By_아령
+	List<Comment> findByComment(int id);
+}

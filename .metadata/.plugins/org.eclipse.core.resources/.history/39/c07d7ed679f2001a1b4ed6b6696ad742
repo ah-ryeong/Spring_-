@@ -1,0 +1,23 @@
+package com.winter.baseballproject.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.winter.baseballproject.web.dto.player.PlayerReqDto;
+import com.winter.baseballproject.web.dto.team.TeamReqDto;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class PlayerService {
+
+	@Transactional
+	public void Player저장(PlayerReqDto playerReqDto) {
+		System.out.println("PlayerService 입력 들어옴");
+		System.out.println("PlayerService : Player저장 :::"+ playerReqDto);
+		String teamName = teamReqDto.getTeamName();
+		teamReqDto.setTeamName(teamName);
+		teamRepository.save(teamReqDto.toTeamEntity());
+	}
+}

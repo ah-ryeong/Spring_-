@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /blog
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blogpractice?serverTimezone=Asia/Seoul
+    username: blogpractice
+    password: bitc5600
+    
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create #update, none, create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # entity를 만들때(테이블을 만들때) 변수명 그대로 데이터베이스 필드를 넣어준다.
+      use-new-id-generator-mappings: false # 시퀀스를 어떤식으로 사용할지 방식을 결정함 -> false : JPA가 사용하는 기본 넘버링 방식을 따라가지않는다.
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
